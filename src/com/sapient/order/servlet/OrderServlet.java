@@ -1,3 +1,5 @@
+package com.sapient.order.servlet;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.Writer;
@@ -30,14 +32,16 @@ public class OrderServlet extends HttpServlet {
             System.out.println(header+" "+pvalue);
         } 
         
-//        PrintWriter writer = resp.getWriter();
-//        writer.println("<b>Hello Internet</b>");
+        PrintWriter writer = resp.getWriter();
+        writer.println("<b>Hello Internet</b>");
 		
 	}
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		System.out.println("Hola");
+//        PrintWriter writer = resp.getWriter();
+//        writer.println("<b>Hello Internet from POST</b>");
 	}
 	
 }
