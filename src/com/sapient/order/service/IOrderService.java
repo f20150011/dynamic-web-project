@@ -4,6 +4,6 @@ import com.sapient.order.dto.Order;
 
 public interface IOrderService {
 
-	void processOrder(Order order);
+	public void processOrder(Order order);
 
 }

@@ -58,9 +58,17 @@ public class OrderServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		Order order = new Order();
-		order.setCompany("sapient");
-		order.setLocation("france");
+		String company = req.getParameter("company");
+		String location = req.getParameter("location");
+		Float price = Float.valueOf(req.getParameter("price"));
+		order.setCompany(company);
+		order.setLocation(location);
+		order.setPrice(price);
 		orderService.processOrder(order);
+//		String res[] = req.getParameterValues("subjects");
+//		for (String string : res) {
+//			System.out.println(string);
+//		}
 	}
 	
 }

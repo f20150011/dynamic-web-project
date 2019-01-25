@@ -9,5 +9,6 @@ public class Order {
 
 	private String company;
 	private String location;
+	private Float price;
 	
 }

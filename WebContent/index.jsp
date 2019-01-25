@@ -9,9 +9,15 @@
 <body>
 <h1>Sapient Shop</h1>
 <p>
-	<form action="hello" method="POST">
-		Price: <input/>
+	<form action="hello" method="post">
+		Company: <input name="company"/>
+		Location: <input name="location"/>
+		Price: <input name="price"/>
 		<input type="submit" value="Submit"	/>
+		<!-- 
+		<input type="checkbox" name="subjects" value="maths">Maths
+		<input type="checkbox" name="subjects" value="chem">Chem
+		-->
 	</form>
 </p>
 </body>
