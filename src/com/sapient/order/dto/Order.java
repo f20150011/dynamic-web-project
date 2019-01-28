@@ -7,6 +7,7 @@ import lombok.Setter;
 @Setter
 public class Order {
 
+	private int id;
 	private String company;
 	private String location;
 	private Float price;

@@ -2,11 +2,12 @@ package com.sapient.order.service;
 
 import com.sapient.order.dto.Order;
 import com.sapient.order.repository.IOrderRepository;
-import com.sapient.order.repository.OrderRepositoryImpl;
+import com.sapient.order.repository.OrderRepositoryHibernate;
+import com.sapient.order.repository.OrderRepositoryJDBC;
 
 public class OrderServiceImpl implements IOrderService {
 
-	IOrderRepository orderRepository = new OrderRepositoryImpl();
+	IOrderRepository orderRepository = new OrderRepositoryHibernate();
 
 	/*
 	 * (non-Javadoc)

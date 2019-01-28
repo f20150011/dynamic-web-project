@@ -7,7 +7,7 @@ import java.sql.Statement;
 import com.mysql.cj.x.protobuf.MysqlxCrud.OrderOrBuilder;
 import com.sapient.order.dto.Order;
 
-public class OrderRepositoryImpl implements IOrderRepository{
+public class OrderRepositoryJDBC implements IOrderRepository{
 
 	public void save(Order order) {
 		try {
