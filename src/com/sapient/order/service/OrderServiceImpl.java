@@ -4,10 +4,11 @@ import com.sapient.order.dto.Order;
 import com.sapient.order.repository.IOrderRepository;
 import com.sapient.order.repository.OrderRepositoryHibernate;
 import com.sapient.order.repository.OrderRepositoryJDBC;
+import com.sapient.order.repository.OrderRepositoryPSQL;
 
 public class OrderServiceImpl implements IOrderService {
 
-	IOrderRepository orderRepository = new OrderRepositoryHibernate();
+	IOrderRepository orderRepository = new OrderRepositoryPSQL();
 
 	/*
 	 * (non-Javadoc)
