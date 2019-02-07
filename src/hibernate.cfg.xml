@@ -15,7 +15,6 @@
 		<!-- Assume test is the database name -->
 
 		<property name="hibernate.connection.url">
-			<!--  jdbc:mysql://10.150.222.33:3306/shriram -->
 			jdbc:postgresql://localhost:5432/sapient
 		</property>
 
